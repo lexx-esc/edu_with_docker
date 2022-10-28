@@ -6,3 +6,4 @@
 
  Потомки:
  - [dotnet](../edu_dotnet/)
+ - [python](../edu_python/)

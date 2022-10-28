@@ -5,6 +5,7 @@
 Не хотелось сильно мудрить, поэтому решил, что будет единая база, а на нее будут достраиваться образы необходимых библиотек и инструментов. Ознакомится с их содержимым можно тут:
 - [База](edu_platform/)
 - [dotnet](edu_dotnet)
+- [python](edu_python)
 
 По мере добавления инструментов, будут добавляться и потомки.
 
@@ -25,7 +26,7 @@ $ docker build -t lexxesc/edu_dotnet
 
 А потом запускаем сборку контейнера
 ```
-S docker run -p 23:22 -v /full/path/my/project:/app -d lexxesc/edu_dotnet
+S docker run -p 23:22 -v /full/path/my/project:/app -d --name dotnet lexxesc/edu_dotnet
 ```
 
 Если хотите все оставить внутри приложения, ключ -v и его параметры можно не прописывать
